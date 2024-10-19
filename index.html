@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MMMMMMMMMMMMMMMMMMM</title>
+    <title>Dinner Group Selector</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://motionbgs.com/media/1779/elden-ring-rannis-lunar-embrace.jpg'); /* Example online background image */
+            background-image: url('https://images.unsplash.com/photo-1518709268801-1770a1a15f6e'); /* Example online background image */
             background-size: cover; /* Cover the entire background */
             background-position: center; /* Center the background image */
             background-repeat: no-repeat; /* Prevent repeating */
@@ -101,12 +101,22 @@
             margin-top: 10px;
             color: #333;
         }
+
+        /* Audio player styles */
+        .audio-player {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        audio {
+            width: 100%; /* Full width for the audio player */
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>OKKOKOKKOOKOKOKOKOKOKO</h1>
+            <h1>Dinner Group Selector</h1>
             <p>Please type your name below:</p>
         </header>
         <div class="input-group">
@@ -118,14 +128,23 @@
             <p id="groupText"></p>
             <div id="tableImage" class="table-image"></div> <!-- Image display -->
         </div>
+
+        <!-- Audio player section -->
+        <div class="audio-player">
+            <h2>Enjoy the Music!</h2>
+            <audio controls>
+                <source src="your-audio-file.mp3" type="audio/mpeg"> <!-- Replace with your audio file URL -->
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
     </div>
 
     <script>
         const nameGroups = {
-            'Muhammad Syahir': { group: 'Group A', image: 'groupA_image.png' },
-            'Muhammad Syakir': { group: 'Group B', image: 'groupB_image.png' },
-            'Muhammad Sulhi': { group: 'Group C', image: 'groupC_image.png' },
-            'Ain Shahira': { group: 'Group D', image: 'groupD_image.png' }
+            'Muhammad Syahir': { group: 'Group A', image: 'images/groupA_image.jpg' },
+            'Muhammad Syakir': { group: 'Group B', image: 'images/groupB_image.jpg' },
+            'Muhammad Sulhi': { group: 'Group C', image: 'images/groupC_image.jpg' },
+            'Ain Shahira': { group: 'Group D', image: 'images/groupD_image.jpg' }
         };
 
         const names = Object.keys(nameGroups);
